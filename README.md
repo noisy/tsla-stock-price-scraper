@@ -37,8 +37,12 @@
 
 5. Configure vscode to use poetry environment
 
-    ```bash
-    poetry shell
+    First run:
+
+    ```
+    poetry env info --path
     ```
 
-    Then in vscode, open the command palette and select `Python: Select Interpreter` and select the one that starts with `~/.cache/pypoetry/virtualenvs/...`
+    and copy the output and use it to create a new python interpreter in vscode.
+
+    Then in vscode, open the command palette and select `Python: Select Interpreter` and select "Enter interpreter path" and paste the path you copied earlier.
